@@ -66,3 +66,4 @@ D:\Github\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.Migrations
 D:\Github\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.csproj.GenerateResource.Cache
 D:\Github\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.dll
 D:\Github\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.pdb
+D:\Github\MvcApplication1\MvcApplication1\bin\fonts\glyphicons-halflings-regular.woff
