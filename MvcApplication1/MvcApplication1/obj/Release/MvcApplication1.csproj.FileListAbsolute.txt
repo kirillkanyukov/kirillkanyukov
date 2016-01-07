@@ -1,3 +1,4 @@
+D:\Github\MvcApplication1\MvcApplication1\bin\fonts\glyphicons-halflings-regular.woff
 D:\Github\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll.config
 D:\Github\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
 D:\Github\MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
@@ -62,8 +63,8 @@ D:\Github\MvcApplication1\MvcApplication1\bin\ko\System.Spatial.resources.dll
 D:\Github\MvcApplication1\MvcApplication1\bin\ru\System.Spatial.resources.dll
 D:\Github\MvcApplication1\MvcApplication1\bin\zh-Hans\System.Spatial.resources.dll
 D:\Github\MvcApplication1\MvcApplication1\bin\zh-Hant\System.Spatial.resources.dll
+D:\Github\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.csprojResolveAssemblyReference.cache
 D:\Github\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.Migrations.InitialCreate.resources
 D:\Github\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.csproj.GenerateResource.Cache
 D:\Github\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.dll
 D:\Github\MvcApplication1\MvcApplication1\obj\Release\MvcApplication1.pdb
-D:\Github\MvcApplication1\MvcApplication1\bin\fonts\glyphicons-halflings-regular.woff
