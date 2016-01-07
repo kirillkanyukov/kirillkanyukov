@@ -1,4 +1,4 @@
-﻿var TodoApp = angular.module("TodoApp", ["ngResource", "ngRoute"]).
+﻿var TodoApp = angular.module("TodoApp", ["ngResource", "ngRoute", "ui.bootstrap"]).
     config(function ($routeProvider) {
         $routeProvider.
             when('/', { controller: ListCtrl, templateUrl: 'list.html' }).
@@ -92,6 +92,28 @@ var CreateCtrl = function ($scope, $location, Todo) {
             $location.path('/');
         });
     };
+    $scope.open = function ($event) {
+        $scope.status.opened = true;
+    };
+    $scope.status = {
+        opened: false
+    };
+    var tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    var afterTomorrow = new Date();
+    afterTomorrow.setDate(tomorrow.getDate() + 2);
+    $scope.events =
+    [
+      {
+          date: tomorrow,
+          status: 'full'
+      },
+      {
+          date: afterTomorrow,
+          status: 'partially'
+      }
+    ];
+
 };
 
 var EditCtrl = function ($scope, $routeParams, $location, Todo) {
