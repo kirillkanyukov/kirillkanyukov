@@ -1,0 +1,40 @@
+﻿<div id="custom-search-input">
+    <div class="input-group col-md-12">
+        <span class="input-group-btn">
+            <button ng-click="query=''; reset()" ng-disabled="!query" type="submit" class="btn">Reset</button>
+        </span>
+        <input type="text" ng-model="query" class="  search-query form-control" placeholder="Search"/>
+        <span class="input-group-btn">
+            <button ng-click="reset()" class="btn btn-danger" type="submit">
+                <span class=" glyphicon glyphicon-search"></span>
+            </button>
+        </span>        
+    </div>
+</div>
+
+
+<table class="table table-striped table-condensed table-hover">
+    <thead>
+    <tr>
+        <th sorted="Todo">Todo</th>
+        <th sorted="Priority">Priority</th>
+        <th sorted="DueDate">Due</th>
+        <th><a href="#/new"><i class="glyphicon glyphicon-plus"></i></a></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in items" id="todo_{{item.TodoItemId}}">
+        <td>{{item.Todo}}</td>
+        <td>{{item.Priority}}</td>
+        <td>{{item.DueDate | date: mediumDate}}</td>
+        <td>
+            <a href="#/edit/{{item.TodoItemId}}">
+                <i class="glyphicon glyphicon-edit"></i>
+            </a>
+            <a ng-click="delete()"><i class="glyphicon glyphicon-remove"></i></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<a href="" ng-click="offset = offset + limit; search()" ng-show="show_more()">Show more</a>
