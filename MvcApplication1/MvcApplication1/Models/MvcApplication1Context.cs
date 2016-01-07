@@ -17,6 +17,12 @@ namespace MvcApplication1.Models
         {
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(
+                new MigrateDatabaseToLatestVersion<MvcApplication1Context, Migrations.Configuration>());
+        }
+
         public DbSet<TodoItem> TodoItems { get; set; }
     }
 }
